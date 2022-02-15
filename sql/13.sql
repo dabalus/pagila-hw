@@ -4,3 +4,4 @@
  * Use a JOIN to display the titles of movies starting with the letters K and Q whose language is English.
  * Use tables film and language, and order the results alphabetically by film title.
  */
+ select film.film_id, title, film.language_id, name from film join language on film.language_id = language.language_id where title like 'K%' or title like 'Q%' order by title;
